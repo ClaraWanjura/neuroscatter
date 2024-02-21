@@ -2,7 +2,7 @@
 
 This repository contains the source code for the paper https://arxiv.org/abs/2308.16181 on nonlinear neuromorphic computing via linear wave scattering. 
 
-![image](https://github.com/ClaraWanjura/neuroscatter/assets/66438106/f99aeafe-02ac-4a16-a57a-ed31e2e23f85 | width=200)
+![image](https://github.com/ClaraWanjura/neuroscatter/assets/66438106/f99aeafe-02ac-4a16-a57a-ed31e2e23f85)
 
 The idea behind this work is to send optical waves through a linear scattering system like an array of waveguides and optical resonators. These optical resonators or other elements may have tuneable parameters. These tuneable parameters now serve two functions in trying to use the system to solve a machine-learning task: Some of the parameters can be used to inject the input (e.g. images to be classified). Other parameters are trainable and will be slowly updated during training. The code given here simulates physical scattering setups, observes the scattering response for many different training samples, and updates the trainable parameters via gradient descent to minimize the deviation from the desired target output for the training samples. Evaluation of the scattering response as well as calculation of the gradients is done using jax, and training updates are implemented via optax.
 
